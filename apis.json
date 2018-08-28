@@ -1,0 +1,33 @@
+{
+	"name": "Streadata.io API Gallery - Service Configuration",
+	"description": "This is a repository of service configuration APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/service-configuration.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-28",
+	"url": "http://service-configuration.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "Google Service Management",
+			"x-api-slug": "google-service-management",
+			"description": "Google Service Management is an infrastructure service of Google Cloud Platform that manages other APIs and services, including Googles own Cloud Platform services and their APIs, and services created using Google Cloud Endpoints.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-cloud-icon.png",
+			"humanURL": "https://cloud.google.com/service-management/overview",
+			"baseURL": "://servicemanagement.googleapis.com//",
+			"tags": "Service Configuration",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/service-configuration/master/_listings/google-service-management/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Service Configuration",
+	"include": [
+		{
+			"name": "Google Service Management",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/service-configuration/master/_listings/google-service-management/apis.yaml"
+		}
+	]
+}

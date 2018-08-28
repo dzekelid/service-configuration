@@ -1,9 +1,20 @@
+---
 swagger: "2.0"
 x-collection-name: Google Service Management
-x-complete: 1
+x-complete: 0
 info:
-  title: Google Service Management
-  description: google-service-management-allows-service-producers-to-publish-their-services-on-google-cloud-platform-so-that-they-can-be-discovered-and-used-by-service-consumers-
+  title: Google Service Management API Create new Service Configuration
+  description: |-
+    Creates a new service configuration rollout. Based on rollout, the
+    Google Service Management will roll out the service configurations to
+    different backend services. For example, the logging configuration will be
+    pushed to Google Cloud Logging.
+
+    Please note that any previous pending and running Rollouts and associated
+    Operations will be automatically cancelled so that the latest Rollout will
+    not be blocked by previous Rollouts.
+
+    Operation<response: Rollout>
   contact:
     name: Google
     url: https://google.com
@@ -163,21 +174,17 @@ paths:
           description: OK
       tags:
       - Service Configuration
-  /v1/services/{serviceName}/rollouts/{rolloutId}:
-    get:
-      summary: Get Service Configuration
-      description: Gets a service configuration rollout.
-      operationId: servicemanagement.services.rollouts.get
-      x-api-path-slug: v1servicesservicenamerolloutsrolloutid-get
-      parameters:
-      - in: path
-        name: rolloutId
-        description: The id of the rollout resource
-      - in: path
-        name: serviceName
-        description: The name of the service
-      responses:
-        200:
-          description: OK
-      tags:
-      - Service Configuration
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---
